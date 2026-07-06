@@ -17,6 +17,26 @@
         </div>
     </header>
 
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li class="nav-dropdown">
+                    <a href="#support" class="dropdown-toggle">Hỗ trợ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#support-tools">🔧 Tools</a></li>
+                        <li><a href="#support-wiki">📖 Wiki kỹ thuật</a></li>
+                        <li><a href="#support-catalog">📋 Catalog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Phần Giới thiệu -->
     <!-- About Section -->
 <section id="about" class="about section">
@@ -154,6 +174,7 @@
     </div>
 
 </section>
+
     <!-- Phần Dự án -->
     <section id="projects" class="container">
         <h2>Dự án nổi bật</h2>
@@ -169,6 +190,143 @@
             </li>
         </ul>
     </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hỗ trợ</h2>
+                <p>Truy cập các công cụ, tài liệu kỹ thuật và danh mục sản phẩm</p>
+            </div>
+
+            <!-- Support Tabs -->
+            <div class="support-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="tools">🔧 Tools</button>
+                    <button class="tab-btn" data-tab="wiki">📖 Wiki kỹ thuật</button>
+                    <button class="tab-btn" data-tab="catalog">📋 Catalog</button>
+                </div>
+
+                <!-- Tools Tab -->
+                <div id="tools" class="tab-content active">
+                    <h3>Công cụ hỗ trợ</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Cisco Packet Tracer</h4>
+                            <p>Mô phỏng và thiết kế mạng</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>GNS3</h4>
+                            <p>Emulator mạng chuyên nghiệp</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Wireshark</h4>
+                            <p>Phân tích gói tin mạng</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Advanced IP Scanner</h4>
+                            <p>Quét và phát hiện thiết bị mạng</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Dahua iVMS-4200</h4>
+                            <p>Quản lý camera Dahua</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Hikvision iVMS-4500</h4>
+                            <p>Quản lý camera Hikvision</p>
+                            <a href="#" class="btn-link">Tìm hiểu thêm →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wiki Tab -->
+                <div id="wiki" class="tab-content">
+                    <h3>Wiki kỹ thuật</h3>
+                    <div class="wiki-list">
+                        <div class="wiki-item">
+                            <h4>🌐 Hướng dẫn cấu hình Router</h4>
+                            <p>Hướng dẫn chi tiết cấu hình Router Ruijie, TP-Link và các dòng khác</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                        <div class="wiki-item">
+                            <h4>📹 Triển khai hệ thống Camera IP</h4>
+                            <p>Hướng dẫn từng bước triển khai, cấu hình NVR và giám sát từ xa</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                        <div class="wiki-item">
+                            <h4>🖥 Cài đặt Windows Server & Active Directory</h4>
+                            <p>Hướng dẫn cài đặt, cấu hình AD, GPO và quản lý người dùng</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                        <div class="wiki-item">
+                            <h4>☀️ Giám sát Hệ thống Điện mặt trời</h4>
+                            <p>Hướng dẫn cấu hình Solis Cloud, Deye Mobile App và Grafana Dashboard</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                        <div class="wiki-item">
+                            <h4>🔒 Thiết lập VPN và Firewall</h4>
+                            <p>Hướng dẫn cấu hình OpenVPN, WireGuard và quản lý Firewall</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                        <div class="wiki-item">
+                            <h4>🗄 Backup và Disaster Recovery</h4>
+                            <p>Hướng dẫn sử dụng Acronis Backup, Veeam và các giải pháp khác</p>
+                            <a href="#" class="btn-link">Xem tài liệu →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catalog Tab -->
+                <div id="catalog" class="tab-content">
+                    <h3>Danh mục thiết bị & phần mềm</h3>
+                    <div class="catalog-grid">
+                        <div class="catalog-category">
+                            <h4>📹 Camera & Giám sát</h4>
+                            <ul>
+                                <li>Dahua IPC-HDBW Series</li>
+                                <li>Hikvision DS-2CD Series</li>
+                                <li>Imou Ranger Series</li>
+                                <li>Ezviz C3W Pro</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-category">
+                            <h4>🌐 Thiết bị Mạng</h4>
+                            <ul>
+                                <li>Ruijie RG-NBS Series</li>
+                                <li>TP-Link TL-SG Series</li>
+                                <li>TP-Link Archer Series</li>
+                                <li>Ruijie Reyee Series</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-category">
+                            <h4>☀️ Năng lượng Mặt trời</h4>
+                            <ul>
+                                <li>Solis 1P & 3P Inverter</li>
+                                <li>Deye SUN Series</li>
+                                <li>BMS Lifepo4</li>
+                                <li>Solar Panel 450W+</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-category">
+                            <h4>🖥 Server & Linh kiện</h4>
+                            <ul>
+                                <li>Dell PowerEdge R640/R650</li>
+                                <li>HP ProLiant DL380/DL385</li>
+                                <li>Intel Xeon Processor</li>
+                                <li>Lenovo ThinkSystem Server</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section id="brands" class="container brands-section">
         <div class="section-title">
             <h2>Thiết bị & Nền tảng triển khai</h2>
@@ -330,6 +488,44 @@
             <p>&copy; 2026 Thanh liêm. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Tab switching functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabName = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+
+        // Dropdown menu functionality
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-dropdown')) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
